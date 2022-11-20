@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and signup Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <div class="button-box">
+
+                <div id="btn"></div>
+
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <form class="login-form" id="login">
+                <input type="text" class="form-field" placeholder="username" required>
+                <input type="password" class="form-field" placeholder="password" required>
+
+                <input type="checkbox" class="checkbox"><span>Remember password</span>
+
+                <button type="submit" class="submit">Login</button>
+            </form>
+
+            <form class="login-form" id="register">
+                <input type="text" class="form-field" placeholder="username" required>
+                <input type="email" class="form-field" placeholder="xyz@gmail.com" required>
+                <input type="password" class="form-field" placeholder="password" required>
+
+                <input type="checkbox" class="checkbox"><span>Accept to the term & Condition</span>
+
+
+                <button type="submit" class="submit">Register</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register()
+        {
+            x.style.left= "-400px";
+            y.style.left="50px";
+            z.style.left="110px";
+        }
+        function login()
+        {
+            x.style.left= "50px";
+            y.style.left="450px";
+            z.style.left="0";
+        }
+
+    </script>
+</body>
+</html>
